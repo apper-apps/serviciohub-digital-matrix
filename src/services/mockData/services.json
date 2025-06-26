@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 1,
+    "name": "Hosting Web Empresarial",
+    "category": "Hosting",
+    "price": 599,
+    "billingCycle": "monthly",
+    "description": "Hosting web profesional con SSD, SSL incluido y soporte 24/7"
+  },
+  {
+    "Id": 2,
+    "name": "Servidor VPS Administrado",
+    "category": "VPS",
+    "price": 1299,
+    "billingCycle": "monthly",
+    "description": "Servidor virtual privado completamente administrado con respaldos diarios"
+  },
+  {
+    "Id": 3,
+    "name": "Registro de Dominio .mx",
+    "category": "Dominios",
+    "price": 450,
+    "billingCycle": "annual",
+    "description": "Registro anual de dominio .mx con gestión completa de DNS"
+  },
+  {
+    "Id": 4,
+    "name": "Desarrollo WordPress",
+    "category": "Desarrollo",
+    "price": 8500,
+    "billingCycle": "oneTime",
+    "description": "Desarrollo completo de sitio web en WordPress con diseño responsivo"
+  },
+  {
+    "Id": 5,
+    "name": "Mantenimiento WordPress",
+    "category": "Mantenimiento",
+    "price": 799,
+    "billingCycle": "monthly",
+    "description": "Mantenimiento mensual de WordPress: actualizaciones, respaldos y seguridad"
+  },
+  {
+    "Id": 6,
+    "name": "Email Hosting Corporativo",
+    "category": "Email",
+    "price": 149,
+    "billingCycle": "monthly",
+    "description": "Cuentas de email profesionales con 10GB de almacenamiento por cuenta"
+  },
+  {
+    "Id": 7,
+    "name": "Campaña SEO Básica",
+    "category": "Marketing",
+    "price": 2500,
+    "billingCycle": "monthly",
+    "description": "Optimización SEO mensual con reporte de posicionamiento"
+  }
+]

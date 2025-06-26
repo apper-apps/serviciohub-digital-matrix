@@ -1,0 +1,73 @@
+import Dashboard from '@/components/pages/Dashboard';
+import Clients from '@/components/pages/Clients';
+import Services from '@/components/pages/Services';
+import Support from '@/components/pages/Support';
+import Configuration from '@/components/pages/Configuration';
+import ClientDetail from '@/components/pages/ClientDetail';
+import ServiceDetail from '@/components/pages/ServiceDetail';
+import TicketDetail from '@/components/pages/TicketDetail';
+
+export const routes = {
+  dashboard: {
+    id: 'dashboard',
+    label: 'Dashboard',
+    path: '/',
+    icon: 'LayoutDashboard',
+    component: Dashboard
+  },
+  clients: {
+    id: 'clients',
+    label: 'Clientes',
+    path: '/clientes',
+    icon: 'Users',
+    component: Clients
+  },
+  services: {
+    id: 'services',
+    label: 'Servicios',
+    path: '/servicios',
+    icon: 'Package',
+    component: Services
+  },
+  support: {
+    id: 'support',
+    label: 'Soporte',
+    path: '/soporte',
+    icon: 'MessageCircle',
+    component: Support
+  },
+  configuration: {
+    id: 'configuration',
+    label: 'Configuración',
+    path: '/configuracion',
+    icon: 'Settings',
+    component: Configuration
+  },
+  clientDetail: {
+    id: 'clientDetail',
+    label: 'Detalle Cliente',
+    path: '/clientes/:id',
+    icon: 'User',
+    component: ClientDetail,
+    hidden: true
+  },
+  serviceDetail: {
+    id: 'serviceDetail',
+    label: 'Detalle Servicio',
+    path: '/servicios/:id',
+    icon: 'Package',
+    component: ServiceDetail,
+    hidden: true
+  },
+  ticketDetail: {
+    id: 'ticketDetail',
+    label: 'Detalle Ticket',
+    path: '/soporte/:id',
+    icon: 'MessageCircle',
+    component: TicketDetail,
+    hidden: true
+  }
+};
+
+export const routeArray = Object.values(routes);
+export default routes;

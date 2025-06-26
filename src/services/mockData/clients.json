@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 1,
+    "companyName": "TechnoSoluciones SA de CV",
+    "rfc": "TSO120515ABC",
+    "contacts": [
+      {
+        "name": "María González",
+        "email": "maria@technosoluciones.mx",
+        "phone": "+52 55 1234 5678",
+        "position": "Directora General"
+      }
+    ],
+    "services": ["1", "3", "5"],
+    "createdAt": "2024-01-15T10:30:00Z",
+    "status": "active"
+  },
+  {
+    "Id": 2,
+    "companyName": "Innovación Digital México",
+    "rfc": "IDM180920DEF",
+    "contacts": [
+      {
+        "name": "Carlos Hernández",
+        "email": "carlos@innovaciondigital.com.mx",
+        "phone": "+52 55 9876 5432",
+        "position": "CTO"
+      }
+    ],
+    "services": ["2", "4"],
+    "createdAt": "2024-02-20T14:15:00Z",
+    "status": "active"
+  },
+  {
+    "Id": 3,
+    "companyName": "Comercial Monterrey SC",
+    "rfc": "COM050310GHI",
+    "contacts": [
+      {
+        "name": "Ana Rodríguez",
+        "email": "ana@comercialmonterrey.mx",
+        "phone": "+52 81 2468 1357",
+        "position": "Gerente de TI"
+      }
+    ],
+    "services": ["1", "2"],
+    "createdAt": "2024-03-10T09:45:00Z",
+    "status": "active"
+  },
+  {
+    "Id": 4,
+    "companyName": "Servicios Guadalajara",
+    "rfc": "SGU220715JKL",
+    "contacts": [
+      {
+        "name": "Roberto Jiménez",
+        "email": "roberto@serviciosguadalajara.com",
+        "phone": "+52 33 3691 2580",
+        "position": "Director de Operaciones"
+      }
+    ],
+    "services": ["3"],
+    "createdAt": "2024-03-25T16:20:00Z",
+    "status": "inactive"
+  }
+]

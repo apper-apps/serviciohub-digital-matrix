@@ -1,0 +1,94 @@
+[
+  {
+    "Id": 1,
+    "clientId": "1",
+    "serviceId": "5",
+    "subject": "Error 500 en sitio web principal",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "2024-03-28T08:15:00Z",
+    "messages": [
+      {
+        "id": 1,
+        "content": "Desde ayer por la tarde el sitio web muestra error 500. Los clientes no pueden acceder.",
+        "sender": "client",
+        "timestamp": "2024-03-28T08:15:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "clientId": "2",
+    "serviceId": "2",
+    "subject": "Solicitud de aumento de recursos VPS",
+    "priority": "medium",
+    "status": "inProgress",
+    "createdAt": "2024-03-27T14:30:00Z",
+    "messages": [
+      {
+        "id": 1,
+        "content": "Necesitamos aumentar la RAM del VPS de 4GB a 8GB debido al crecimiento del tráfico.",
+        "sender": "client",
+        "timestamp": "2024-03-27T14:30:00Z"
+      },
+      {
+        "id": 2,
+        "content": "Perfecto, podemos hacer el upgrade. Te envío la cotización en unos minutos.",
+        "sender": "support",
+        "timestamp": "2024-03-27T15:45:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "clientId": "3",
+    "serviceId": "1",
+    "subject": "Configuración de certificado SSL",
+    "priority": "low",
+    "status": "resolved",
+    "createdAt": "2024-03-26T11:20:00Z",
+    "messages": [
+      {
+        "id": 1,
+        "content": "¿Podrían ayudarme a configurar el certificado SSL en mi nuevo dominio?",
+        "sender": "client",
+        "timestamp": "2024-03-26T11:20:00Z"
+      },
+      {
+        "id": 2,
+        "content": "Por supuesto, ya configuré el SSL automático. Debería estar activo en las próximas 2 horas.",
+        "sender": "support",
+        "timestamp": "2024-03-26T12:15:00Z"
+      },
+      {
+        "id": 3,
+        "content": "Perfecto, ya está funcionando. ¡Gracias!",
+        "sender": "client",
+        "timestamp": "2024-03-26T14:30:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "clientId": "1",
+    "serviceId": "3",
+    "subject": "Renovación de dominio",
+    "priority": "urgent",
+    "status": "closed",
+    "createdAt": "2024-03-25T09:00:00Z",
+    "messages": [
+      {
+        "id": 1,
+        "content": "Mi dominio vence en 3 días, ¿pueden procesarlo la renovación?",
+        "sender": "client",
+        "timestamp": "2024-03-25T09:00:00Z"
+      },
+      {
+        "id": 2,
+        "content": "Dominio renovado exitosamente por un año más. Te envío la factura por email.",
+        "sender": "support",
+        "timestamp": "2024-03-25T10:30:00Z"
+      }
+    ]
+  }
+]
