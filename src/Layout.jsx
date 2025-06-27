@@ -39,15 +39,14 @@ const Layout = () => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <ApperIcon name="Zap" size={16} className="text-white" />
             </div>
-            <h1 className="font-heading font-bold text-xl text-surface-900">ServicioHub</h1>
+<h1 className="font-heading font-bold text-xl text-surface-900">ServicioHub</h1>
           </div>
         </div>
 
-<div className="flex items-center gap-4">
+        <div className="flex items-center gap-4">
           <div className="hidden md:block">
             <SearchBar onSearch={handleSearch} />
           </div>
-          
           <div className="flex items-center gap-2">
             {/* Currency Display */}
             <div className="hidden sm:flex items-center gap-1 px-2 py-1 bg-surface-100 rounded-lg">
