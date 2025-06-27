@@ -1,14 +1,14 @@
+import "@/index.css";
 import React, { useState } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useTheme } from "@/contexts/ThemeContext";
-import { useCurrency } from "@/contexts/CurrencyContext";
-import Profile from "@/components/pages/Profile";
-import "@/index.css";
 import { routeArray } from "@/config/routes";
 import ApperIcon from "@/components/ApperIcon";
+import Profile from "@/components/pages/Profile";
 import SearchBar from "@/components/molecules/SearchBar";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useTheme } from "@/contexts/ThemeContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
 const Layout = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -153,17 +153,15 @@ const Layout = () => {
                     <span>{t(route.label)}</span>
                   </NavLink>
                 ))}
-              </nav>
+</nav>
             </motion.aside>
           </>
         )}
-)}
-
         {/* Main Content */}
         <main className="flex-1 overflow-y-auto">
           <Outlet />
+        </main>
       </div>
-
       {/* Profile Modal */}
       <Profile 
         isOpen={isProfileOpen} 
