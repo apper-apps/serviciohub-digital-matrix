@@ -166,6 +166,8 @@ const Layout = () => {
         isOpen={isProfileOpen} 
         onClose={() => setIsProfileOpen(false)} 
 />
-    </div>
+</div>
   );
 };
+
+export default Layout;

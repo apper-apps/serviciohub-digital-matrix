@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import Layout from './Layout';
-import { routeArray } from './config/routes';
-import NotFound from '@/components/pages/NotFound';
-import { LanguageProvider } from '@/contexts/LanguageContext';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { CurrencyProvider } from '@/contexts/CurrencyContext';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import Layout from '@/Layout'
+import { routeArray } from '@/config/routes'
+import NotFound from '@/components/pages/NotFound'
+import { LanguageProvider } from '@/contexts/LanguageContext'
+import { ThemeProvider } from '@/contexts/ThemeContext'
+import { CurrencyProvider } from '@/contexts/CurrencyContext'
 
 function App() {
 return (
