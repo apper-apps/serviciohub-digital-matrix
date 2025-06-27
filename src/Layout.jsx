@@ -149,10 +149,10 @@ const Layout = () => {
                     }
                   >
                     <ApperIcon name={route.icon} size={20} />
-                    <span>{t(route.label)}</span>
+<span>{t(route.label)}</span>
                   </NavLink>
                 ))}
-</nav>
+              </nav>
             </motion.aside>
           </>
         )}
@@ -165,8 +165,7 @@ const Layout = () => {
       <Profile 
         isOpen={isProfileOpen} 
         onClose={() => setIsProfileOpen(false)} 
-      />
+/>
     </div>
+  );
 };
-
-export default Layout;
