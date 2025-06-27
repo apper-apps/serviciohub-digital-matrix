@@ -2,6 +2,7 @@ import Dashboard from '@/components/pages/Dashboard';
 import Clients from '@/components/pages/Clients';
 import Services from '@/components/pages/Services';
 import Support from '@/components/pages/Support';
+import Team from '@/components/pages/Team';
 import Configuration from '@/components/pages/Configuration';
 import ClientDetail from '@/components/pages/ClientDetail';
 import ServiceDetail from '@/components/pages/ServiceDetail';
@@ -29,12 +30,19 @@ export const routes = {
     icon: 'Package',
     component: Services
   },
-  support: {
+support: {
     id: 'support',
     label: 'Soporte',
     path: '/soporte',
     icon: 'MessageCircle',
     component: Support
+  },
+  team: {
+    id: 'team',
+    label: 'Equipo',
+    path: '/equipo',
+    icon: 'Users',
+    component: Team
   },
   configuration: {
     id: 'configuration',

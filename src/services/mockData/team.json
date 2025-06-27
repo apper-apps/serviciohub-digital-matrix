@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "name": "Juan Carlos Hernández",
+    "email": "admin@serviciohub.com",
+    "phone": "+52 55 1234 5678",
+    "role": "Superadmin",
+    "status": "Activo",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "María González López",
+    "email": "maria.gonzalez@serviciohub.com",
+    "phone": "+52 55 2345 6789",
+    "role": "Admin",
+    "status": "Activo",
+    "createdAt": "2024-01-05T09:15:00Z",
+    "updatedAt": "2024-01-20T14:45:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Carlos Rodríguez Pérez",
+    "email": "carlos.rodriguez@serviciohub.com",
+    "phone": "+52 55 3456 7890",
+    "role": "Colaborator",
+    "status": "Activo",
+    "createdAt": "2024-01-10T11:30:00Z",
+    "updatedAt": "2024-01-25T16:20:00Z"
+  },
+  {
+    "Id": 4,
+    "name": "Ana Martínez Torres",
+    "email": "ana.martinez@serviciohub.com",
+    "phone": "+52 55 4567 8901",
+    "role": "Admin",
+    "status": "Inactivo",
+    "createdAt": "2024-01-12T13:45:00Z",
+    "updatedAt": "1/28/2024 10:15:00 AMZ"
+  },
+  {
+    "Id": 5,
+    "name": "Roberto Silva Mendoza",
+    "email": "roberto.silva@serviciohub.com",
+    "phone": "+52 55 5678 9012",
+    "role": "Colaborator",
+    "status": "Activo",
+    "createdAt": "1/15/2024 8:20:00 AMZ",
+    "updatedAt": "2024-02-01T12:30:00Z"
+  }
+]

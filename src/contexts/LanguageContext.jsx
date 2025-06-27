@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 const LanguageContext = createContext();
 
@@ -90,14 +90,34 @@ const translations = {
     'Error al cargar perfil': 'Error al cargar perfil',
     'Perfil actualizado correctamente': 'Perfil actualizado correctamente',
     'Error al actualizar perfil': 'Error al actualizar perfil',
-    'Notificaciones': 'Notificaciones',
+'Notificaciones': 'Notificaciones',
     'Recibir notificaciones por email': 'Recibir notificaciones por email',
-    'Notificaciones push': 'Notificaciones push',
     'Configuración de Módulos': 'Configuración de Módulos',
     'Guardar Cambios': 'Guardar Cambios',
-    'Cambios guardados correctamente': 'Cambios guardados correctamente'
+    'Cambios guardados correctamente': 'Cambios guardados correctamente',
+    'Equipo': 'Equipo',
+    'Gestión de Equipo': 'Gestión de Equipo',
+    'Administra los usuarios y sus permisos en el sistema': 'Administra los usuarios y sus permisos en el sistema',
+    'Agregar Usuario': 'Agregar Usuario',
+    'Buscar por nombre o email...': 'Buscar por nombre o email...',
+    'Todos los roles': 'Todos los roles',
+    'Todos los estados': 'Todos los estados',
+    'No hay usuarios en el equipo': 'No hay usuarios en el equipo',
+    'Agrega el primer usuario para comenzar': 'Agrega el primer usuario para comenzar',
+    'Crear Usuario': 'Crear Usuario',
+    'Editar Usuario': 'Editar Usuario',
+    'Usuario creado correctamente': 'Usuario creado correctamente',
+    'Usuario actualizado correctamente': 'Usuario actualizado correctamente',
+    'Usuario eliminado correctamente': 'Usuario eliminado correctamente',
+    '¿Estás seguro de que deseas eliminar este usuario?': '¿Estás seguro de que deseas eliminar este usuario?',
+    'Creando...': 'Creando...',
+    'Guardando...': 'Guardando...',
+    'Rol': 'Rol',
+    'Superadmin': 'Superadmin',
+    'Admin': 'Admin',
+    'Colaborator': 'Colaborator'
   },
-en: {
+  en: {
     'Dashboard': 'Dashboard',
     'Clientes': 'Clients',
     'Servicios': 'Services',
@@ -185,11 +205,32 @@ en: {
     'Perfil actualizado correctamente': 'Profile updated successfully',
     'Error al actualizar perfil': 'Error updating profile',
     'Notificaciones': 'Notifications',
-    'Recibir notificaciones por email': 'Receive email notifications',
+'Recibir notificaciones por email': 'Receive email notifications',
     'Notificaciones push': 'Push notifications',
     'Configuración de Módulos': 'Module Settings',
     'Guardar Cambios': 'Save Changes',
-    'Cambios guardados correctamente': 'Changes saved successfully'
+    'Cambios guardados correctamente': 'Changes saved successfully',
+    'Equipo': 'Team',
+    'Gestión de Equipo': 'Team Management',
+    'Administra los usuarios y sus permisos en el sistema': 'Manage users and their permissions in the system',
+    'Agregar Usuario': 'Add User',
+    'Buscar por nombre o email...': 'Search by name or email...',
+    'Todos los roles': 'All roles',
+    'Todos los estados': 'All statuses',
+    'No hay usuarios en el equipo': 'No team members found',
+    'Agrega el primer usuario para comenzar': 'Add the first user to get started',
+    'Crear Usuario': 'Create User',
+    'Editar Usuario': 'Edit User',
+    'Usuario creado correctamente': 'User created successfully',
+    'Usuario actualizado correctamente': 'User updated successfully',
+    'Usuario eliminado correctamente': 'User deleted successfully',
+    '¿Estás seguro de que deseas eliminar este usuario?': 'Are you sure you want to delete this user?',
+    'Creando...': 'Creating...',
+    'Guardando...': 'Saving...',
+    'Rol': 'Role',
+    'Superadmin': 'Superadmin',
+    'Admin': 'Admin',
+    'Colaborator': 'Collaborator'
   }
 };
 
