@@ -76,6 +76,14 @@ const Layout = () => {
                 className="text-surface-600"
               />
             </button>
+{/* Logout Button */}
+            <button
+              onClick={() => window.location.href = '/login'}
+              className="p-2 rounded-lg hover:bg-surface-100 transition-colors"
+              title={t('Cerrar sesión')}
+            >
+              <ApperIcon name="LogOut" size={18} className="text-surface-600" />
+            </button>
 
             {/* Profile Button */}
             <button
@@ -86,7 +94,7 @@ const Layout = () => {
               <ApperIcon name="User" size={18} className="text-surface-600" />
             </button>
           </div>
-        </div>
+</div>
       </header>
 
       <div className="flex-1 flex overflow-hidden">
