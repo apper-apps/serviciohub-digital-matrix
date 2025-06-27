@@ -32,7 +32,19 @@ function Login() {
               Welcome back, please sign in to continue
             </div>
           </div>
+</div>
+        
+        {/* Demo Credentials Info */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 text-center">
+          <div className="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">
+            Demo Login Credentials
+          </div>
+          <div className="space-y-1 text-sm text-blue-700 dark:text-blue-300">
+            <div><span className="font-medium">Email:</span> demo@demo.app</div>
+            <div><span className="font-medium">Password:</span> Demo1234</div>
+          </div>
         </div>
+        
         <div id="authentication" />
         <div className="text-center mt-4">
           <p className="text-sm text-surface-600 dark:text-surface-400">
