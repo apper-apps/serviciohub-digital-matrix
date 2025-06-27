@@ -1,0 +1,170 @@
+[
+  {
+    "Id": 1,
+    "clientId": 1,
+    "clientName": "TechCorp Solutions",
+    "quoteNumber": "COT-2024-001",
+    "title": "Desarrollo de Sistema CRM",
+    "description": "Sistema completo de gestión de relaciones con clientes incluyendo módulos de ventas, marketing y atención al cliente.",
+    "items": [
+      {
+        "description": "Análisis y diseño del sistema",
+        "quantity": 1,
+        "unitPrice": 25000,
+        "total": 25000
+      },
+      {
+        "description": "Desarrollo frontend React",
+        "quantity": 80,
+        "unitPrice": 800,
+        "total": 64000
+      },
+      {
+        "description": "Desarrollo backend Node.js",
+        "quantity": 60,
+        "unitPrice": 900,
+        "total": 54000
+      },
+      {
+        "description": "Base de datos y configuración",
+        "quantity": 1,
+        "unitPrice": 15000,
+        "total": 15000
+      }
+    ],
+    "subtotal": 158000,
+    "tax": 25280,
+    "total": 183280,
+    "status": "Pendiente",
+    "validUntil": "2024-12-31",
+    "createdAt": "2024-11-15T10:00:00Z",
+    "updatedAt": "2024-11-15T10:00:00Z",
+    "notes": "Cotización válida por 45 días. Incluye 3 meses de soporte técnico gratuito."
+  },
+  {
+    "Id": 2,
+    "clientId": 2,
+    "clientName": "Global Industries",
+    "quoteNumber": "COT-2024-002",
+    "title": "Migración a la Nube",
+    "description": "Migración completa de infraestructura local a servicios en la nube con configuración de alta disponibilidad.",
+    "items": [
+      {
+        "description": "Análisis de infraestructura actual",
+        "quantity": 1,
+        "unitPrice": 12000,
+        "total": 12000
+      },
+      {
+        "description": "Configuración de servidores cloud",
+        "quantity": 40,
+        "unitPrice": 600,
+        "total": 24000
+      },
+      {
+        "description": "Migración de datos",
+        "quantity": 1,
+        "unitPrice": 18000,
+        "total": 18000
+      },
+      {
+        "description": "Configuración de backup automático",
+        "quantity": 1,
+        "unitPrice": 8000,
+        "total": 8000
+      }
+    ],
+    "subtotal": 62000,
+    "tax": 9920,
+    "total": 71920,
+    "status": "Aprobada",
+    "validUntil": "2024-12-20",
+    "createdAt": "2024-11-10T14:30:00Z",
+    "updatedAt": "2024-11-12T09:15:00Z",
+    "notes": "Proyecto aprobado. Inicio programado para enero 2025."
+  },
+  {
+    "Id": 3,
+    "clientId": 3,
+    "clientName": "StartupXYZ",
+    "quoteNumber": "COT-2024-003",
+    "title": "Aplicación Móvil E-commerce",
+    "description": "Desarrollo de aplicación móvil para comercio electrónico con integración de pagos y gestión de inventario.",
+    "items": [
+      {
+        "description": "Diseño UX/UI de aplicación móvil",
+        "quantity": 1,
+        "unitPrice": 20000,
+        "total": 20000
+      },
+      {
+        "description": "Desarrollo iOS y Android",
+        "quantity": 120,
+        "unitPrice": 750,
+        "total": 90000
+      },
+      {
+        "description": "Integración de pagos",
+        "quantity": 1,
+        "unitPrice": 15000,
+        "total": 15000
+      },
+      {
+        "description": "Panel de administración web",
+        "quantity": 40,
+        "unitPrice": 650,
+        "total": 26000
+      }
+    ],
+    "subtotal": 151000,
+    "tax": 24160,
+    "total": 175160,
+    "status": "Rechazada",
+    "validUntil": "2024-11-25",
+    "createdAt": "2024-11-05T16:45:00Z",
+    "updatedAt": "2024-11-08T11:20:00Z",
+    "notes": "Cliente rechazó la propuesta por presupuesto. Solicita versión reducida."
+  },
+  {
+    "Id": 4,
+    "clientId": 4,
+    "clientName": "EcoGreen Solutions",
+    "quoteNumber": "COT-2024-004",
+    "title": "Sistema de Gestión Ambiental",
+    "description": "Plataforma web para monitoreo y gestión de indicadores ambientales con reportes automáticos.",
+    "items": [
+      {
+        "description": "Desarrollo de dashboard principal",
+        "quantity": 60,
+        "unitPrice": 700,
+        "total": 42000
+      },
+      {
+        "description": "Módulo de reportes automáticos",
+        "quantity": 30,
+        "unitPrice": 800,
+        "total": 24000
+      },
+      {
+        "description": "Integración con sensores IoT",
+        "quantity": 1,
+        "unitPrice": 25000,
+        "total": 25000
+      },
+      {
+        "description": "Capacitación y documentación",
+        "quantity": 1,
+        "unitPrice": 8000,
+        "total": 8000
+      }
+    ],
+    "subtotal": 99000,
+    "tax": 15840,
+    "total": 114840,
+    "status": "Pendiente",
+    "validUntil": "2024-12-10",
+    "createdAt": "2024-11-12T08:30:00Z",
+    "updatedAt": "2024-11-12T08:30:00Z",
+    "notes": "Cotización en revisión por el comité técnico del cliente."
+  }
+]

@@ -2,6 +2,7 @@ import Dashboard from '@/components/pages/Dashboard';
 import Clients from '@/components/pages/Clients';
 import Services from '@/components/pages/Services';
 import Support from '@/components/pages/Support';
+import Quotes from '@/components/pages/Quotes';
 import Team from '@/components/pages/Team';
 import Configuration from '@/components/pages/Configuration';
 import Notifications from '@/components/pages/Notifications';
@@ -37,6 +38,13 @@ support: {
     path: '/soporte',
     icon: 'MessageCircle',
     component: Support
+  },
+  quotes: {
+    id: 'quotes',
+    label: 'Cotizaciones',
+    path: '/cotizaciones',
+    icon: 'FileText',
+    component: Quotes
   },
   team: {
     id: 'team',
