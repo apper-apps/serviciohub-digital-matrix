@@ -16,7 +16,7 @@ import Callback from '@/components/pages/Callback';
 import ErrorPage from '@/components/pages/ErrorPage';
 import ResetPassword from '@/components/pages/ResetPassword';
 import PromptPassword from '@/components/pages/PromptPassword';
-import userSlice from '@/store/userSlice';
+import userSlice, { setUser, clearUser } from '@/store/userSlice';
 
 // Create Redux store
 const store = configureStore({
@@ -74,8 +74,8 @@ function AppContent() {
           } else {
             navigate('/');
           }
-          // Store user information in Redux
-          dispatch(userSlice.actions.setUser(JSON.parse(JSON.stringify(user))));
+// Store user information in Redux
+          dispatch(setUser(JSON.parse(JSON.stringify(user))));
         } else {
           // User is not authenticated
           if (!isAuthPage) {
@@ -98,8 +98,8 @@ function AppContent() {
             navigate(currentPath);
           } else {
             navigate('/login');
-          }
-          dispatch(userSlice.actions.clearUser());
+}
+          dispatch(clearUser());
         }
       },
       onError: function(error) {
@@ -114,8 +114,8 @@ function AppContent() {
     logout: async () => {
       try {
         const { ApperUI } = window.ApperSDK;
-        await ApperUI.logout();
-        dispatch(userSlice.actions.clearUser());
+await ApperUI.logout();
+        dispatch(clearUser());
         navigate('/login');
       } catch (error) {
         console.error("Logout failed:", error);
