@@ -4,6 +4,7 @@ import Services from '@/components/pages/Services';
 import Support from '@/components/pages/Support';
 import Team from '@/components/pages/Team';
 import Configuration from '@/components/pages/Configuration';
+import Notifications from '@/components/pages/Notifications';
 import ClientDetail from '@/components/pages/ClientDetail';
 import ServiceDetail from '@/components/pages/ServiceDetail';
 import TicketDetail from '@/components/pages/TicketDetail';
@@ -43,6 +44,13 @@ support: {
     path: '/equipo',
     icon: 'Users',
     component: Team
+},
+  notifications: {
+    id: 'notifications',
+    label: 'Notificaciones',
+    path: '/notificaciones',
+    icon: 'Bell',
+    component: Notifications
   },
   configuration: {
     id: 'configuration',
