@@ -4,11 +4,15 @@ import Layout from './Layout';
 import { routeArray } from './config/routes';
 import NotFound from '@/components/pages/NotFound';
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import { ThemeProvider } from '@/contexts/ThemeContext';
+import { CurrencyProvider } from '@/contexts/CurrencyContext';
 
 function App() {
-  return (
-    <LanguageProvider>
-      <BrowserRouter>
+return (
+    <ThemeProvider>
+      <CurrencyProvider>
+        <LanguageProvider>
+          <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             {routeArray.map((route) => (
@@ -21,21 +25,23 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-        <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-          className="z-[9999]"
-        />
-      </BrowserRouter>
-    </LanguageProvider>
+<ToastContainer
+              position="top-right"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="auto"
+              className="z-[9999]"
+            />
+          </BrowserRouter>
+        </LanguageProvider>
+      </CurrencyProvider>
+    </ThemeProvider>
   );
 }
 

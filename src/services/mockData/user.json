@@ -1,0 +1,11 @@
+{
+  "Id": 1,
+  "name": "Juan Carlos Hernández",
+  "email": "admin@serviciohub.com",
+  "phone": "+52 55 1234 5678",
+  "company": "ServicioHub",
+  "position": "Administrador",
+  "avatar": null,
+  "createdAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-01-15T10:30:00Z"
+}

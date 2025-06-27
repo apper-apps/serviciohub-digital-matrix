@@ -1,17 +1,22 @@
-import { useState } from 'react';
-import { Outlet, NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import ApperIcon from '@/components/ApperIcon';
-import { routeArray } from '@/config/routes';
-import { useLanguage } from '@/contexts/LanguageContext';
-import SearchBar from '@/components/molecules/SearchBar';
-
+import React, { useState } from "react";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useTheme } from "@/contexts/ThemeContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
+import Profile from "@/components/pages/Profile";
+import "@/index.css";
+import { routeArray } from "@/config/routes";
+import ApperIcon from "@/components/ApperIcon";
+import SearchBar from "@/components/molecules/SearchBar";
+import { useLanguage } from "@/contexts/LanguageContext";
 const Layout = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { language, toggleLanguage, t } = useLanguage();
-
+  const { theme, toggleTheme } = useTheme();
+  const { currency, symbol } = useCurrency();
   const visibleRoutes = routeArray.filter(route => !route.hidden);
 
   const handleSearch = (query) => {
@@ -38,18 +43,50 @@ const Layout = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
+<div className="flex items-center gap-4">
           <div className="hidden md:block">
             <SearchBar onSearch={handleSearch} />
           </div>
           
-          <button
-            onClick={toggleLanguage}
-            className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-surface-100 transition-colors"
-          >
-            <span className="text-2xl">{language === 'es' ? '🇲🇽' : '🇺🇸'}</span>
-            <span className="font-medium text-sm">{language.toUpperCase()}</span>
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Currency Display */}
+            <div className="hidden sm:flex items-center gap-1 px-2 py-1 bg-surface-100 rounded-lg">
+              <span className="text-sm font-medium text-surface-600">{currency}</span>
+              <span className="text-sm text-surface-500">{symbol}</span>
+            </div>
+
+            {/* Language Switcher */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-surface-100 transition-colors"
+              title={t('Cambiar idioma')}
+            >
+              <span className="text-xl">{language === 'es' ? '🇲🇽' : '🇺🇸'}</span>
+              <span className="hidden sm:inline font-medium text-sm">{language.toUpperCase()}</span>
+            </button>
+
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg hover:bg-surface-100 transition-colors"
+              title={t('Cambiar tema')}
+            >
+              <ApperIcon 
+                name={theme === 'light' ? 'Moon' : 'Sun'} 
+                size={18} 
+                className="text-surface-600"
+              />
+            </button>
+
+            {/* Profile Button */}
+            <button
+              onClick={() => setIsProfileOpen(true)}
+              className="p-2 rounded-lg hover:bg-surface-100 transition-colors"
+              title={t('Mi perfil')}
+            >
+              <ApperIcon name="User" size={18} className="text-surface-600" />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -120,14 +157,19 @@ const Layout = () => {
             </motion.aside>
           </>
         )}
+)}
 
         {/* Main Content */}
         <main className="flex-1 overflow-y-auto">
           <Outlet />
-        </main>
       </div>
+
+      {/* Profile Modal */}
+      <Profile 
+        isOpen={isProfileOpen} 
+        onClose={() => setIsProfileOpen(false)} 
+      />
     </div>
-  );
 };
 
 export default Layout;

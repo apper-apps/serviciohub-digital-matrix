@@ -5,7 +5,8 @@ import Card from '@/components/atoms/Card';
 import Button from '@/components/atoms/Button';
 import ApperIcon from '@/components/ApperIcon';
 import { useLanguage } from '@/contexts/LanguageContext';
-
+import { useTheme } from '@/contexts/ThemeContext';
+import { useCurrency } from '@/contexts/CurrencyContext';
 const Configuration = () => {
   const [settings, setSettings] = useState({
     emailNotifications: true,
@@ -13,11 +14,14 @@ const Configuration = () => {
     autoBackup: true,
     clientModule: true,
     serviceModule: true,
-    supportModule: true
+    supportModule: true,
+    currency: 'MXN',
+    theme: 'light'
   });
   const [loading, setLoading] = useState(false);
   const { language, toggleLanguage, t } = useLanguage();
-
+  const { theme, toggleTheme } = useTheme();
+  const { currency, formatCurrency } = useCurrency();
   const handleSettingChange = (key, value) => {
     setSettings(prev => ({
       ...prev,
@@ -77,28 +81,29 @@ const Configuration = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="space-y-6"
+className="space-y-6"
       >
-        {/* Language Settings */}
+        {/* General Settings */}
         <motion.div variants={itemVariants}>
           <Card>
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-primary/10 rounded-lg">
-                <ApperIcon name="Globe" size={20} className="text-primary" />
+                <ApperIcon name="Settings" size={20} className="text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-surface-900">
-                {t('Configuración de Idioma')}
+                {t('Configuración General')}
               </h3>
             </div>
 
             <div className="space-y-4">
+              {/* Language Setting */}
               <div className="flex items-center justify-between p-4 bg-surface-50 rounded-lg">
                 <div>
                   <p className="font-medium text-surface-900">
-                    Idioma de la interfaz
+                    {t('Idioma de la interfaz')}
                   </p>
                   <p className="text-sm text-surface-600">
-                    Cambia el idioma de la aplicación
+                    {t('Cambia el idioma de la aplicación')}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
@@ -116,10 +121,58 @@ const Configuration = () => {
                   </button>
                 </div>
               </div>
+
+              {/* Currency Setting */}
+              <div className="flex items-center justify-between p-4 bg-surface-50 rounded-lg">
+                <div>
+                  <p className="font-medium text-surface-900">
+                    {t('Moneda')}
+                  </p>
+                  <p className="text-sm text-surface-600">
+                    {t('Moneda utilizada en la aplicación')}
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-surface-600">
+                    {t('Peso Mexicano')} (MXN)
+                  </span>
+                  <div className="px-3 py-2 bg-white border border-surface-300 rounded-lg">
+                    <span className="text-sm font-medium">
+                      {formatCurrency(1000)}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Theme Setting */}
+              <div className="flex items-center justify-between p-4 bg-surface-50 rounded-lg">
+                <div>
+                  <p className="font-medium text-surface-900">
+                    {t('Tema de la interfaz')}
+                  </p>
+                  <p className="text-sm text-surface-600">
+                    {t('Cambia entre modo claro y oscuro')}
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-surface-600">
+                    {theme === 'light' ? t('Claro') : t('Oscuro')}
+                  </span>
+                  <button
+                    onClick={toggleTheme}
+                    className="flex items-center gap-2 px-3 py-2 bg-white border border-surface-300 rounded-lg hover:bg-surface-50 transition-colors"
+                  >
+                    <ApperIcon 
+                      name={theme === 'light' ? 'Moon' : 'Sun'} 
+                      size={14} 
+                    />
+                    <ApperIcon name="RefreshCw" size={14} />
+                  </button>
+                </div>
+              </div>
             </div>
           </Card>
         </motion.div>
-
         {/* Notification Settings */}
         <motion.div variants={itemVariants}>
           <Card>
